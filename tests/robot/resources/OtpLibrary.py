@@ -1,0 +1,8 @@
+# pip install pyotp
+
+import pyotp
+
+class OtpLibrary:
+    def get_otp(self, secret):
+        totp = pyotp.TOTP(secret)
+        return totp.now()

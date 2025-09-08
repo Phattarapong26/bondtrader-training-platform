@@ -1,0 +1,9 @@
+# Default reviewers/owners for the repository
+# Use GitHub usernames
+
+*   @Phattarapong26
+
+# Example path-specific owners (uncomment and edit if needed)
+# /Server/**        @backend-owner
+# /clients/**       @frontend-owner
+# /tests/robot/**   @qa-owner

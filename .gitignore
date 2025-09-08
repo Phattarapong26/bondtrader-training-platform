@@ -1,0 +1,27 @@
+# Reports and test artifacts
+robot-reports/
+reports/
+report.html
+log.html
+output.xml
+selenium-screenshot-*.png
+
+# Local screenshots dump (if any at root)
+screenshots/
+
+# Env files
+server/.env
+Server/.env
+
+# Node
+node_modules/
+Server/node_modules/
+clients/node_modules/
+
+# Build outputs
+Server/dist/
+clients/dist/
+dist/
+
+# MacOS
+.DS_Store

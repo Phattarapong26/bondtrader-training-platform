@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Client service - React/Angular/Vue frontend
+  client:
+    build:
+      context: ./clients
+      dockerfile: dockerfile
+    image: uknowme-client:latest
+    ports:
+      - "5173:80"
+    depends_on:
+      - server
+    restart: unless-stopped
+    networks:
+      - uknowme-network
+
+  # Server service - Node.js/Express backend
+  server:
+    build:
+      context: ./server
+      dockerfile: dockerfile
+    image: uknowme-server:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://host.docker.internal:27017/Uknowmedatabase
+    volumes:
+      - ./server/src/uploads:/app/src/uploads
+    restart: unless-stopped
+    networks:
+      - uknowme-network
+
+networks:
+  uknowme-network:
+    driver: bridge
