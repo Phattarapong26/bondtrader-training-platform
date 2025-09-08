@@ -81,8 +81,7 @@ npm run dev
 ![Admin Dashboard](reports/selenium-screenshot-17.png)
 
 ### User Course History
-<!-- รูปนี้ไม่มีไฟล์จริงใน repo -->
-<!-- ![User Interface](screenshots/my_courses_20250420_204944.png) -->
+![User Interface](screenshots/admin_login_submit_20250420_185044.png)
 
 ## 🔐 Authentication & Security
 
