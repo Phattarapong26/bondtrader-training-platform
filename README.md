@@ -248,6 +248,5 @@ This project is developed as a portfolio demonstration of full-stack development
 
 ---
 
-**Developed by**: [Your Name]  
-**Contact**: [Your Email]  
-**Portfolio**: [Your Portfolio URL]
+**Developed by**: [Phattarapong Phengtavee]  
+**Contact**: [phattarapong.phe@gmail.com]  
